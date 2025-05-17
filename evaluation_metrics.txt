@@ -1,0 +1,15 @@
+Model Evaluation Metrics
+========================
+MSE: 0.0003812457358932567
+RMSE: 0.019525514996876693
+MAE: 0.010800038531244149
+R²: 0.9999992004611211
+MAPE: 11674352713882.482
+
+Best parameters found:
+OrderedDict({
+    'reg__colsample_bytree': 0.900635462955971,
+     'reg__learning_rate': 0.29999999999999993,
+      'reg__max_depth': 4,
+      'reg__n_estimators': 139,
+       'reg__subsample': 0.9089509263201534})
