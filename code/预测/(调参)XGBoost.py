@@ -68,7 +68,7 @@ best_model = opt.best_estimator_
 y_pred = best_model.predict(features)
 
 import joblib # 保存模型到文件 
-joblib_file = "xgb_reg_model.pkl" 
+joblib_file = "xgb_reg_model.pkl" #由于采用了pipline，所以可以实现自动标准化
 joblib.dump(best_model, joblib_file)
 
 # 综合评估指标

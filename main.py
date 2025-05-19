@@ -21,6 +21,10 @@ async def predict(input_data: dict):
 # 根路径
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Health_check": "OK"}
+
+@app.get("/info")
+def read_info():
+    return {"Name":"英格索兰项目","Version":"1.0.0","Author":"赵泽宸","Description":"基于XGBoost的瞬时用气量预测模型"}
 # 启动服务
 # uvicorn main:app --reload
