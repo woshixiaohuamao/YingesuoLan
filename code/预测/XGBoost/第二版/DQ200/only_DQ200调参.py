@@ -13,7 +13,7 @@ from xgboost import XGBRegressor
 from skopt import BayesSearchCV
 
 # 数据准备 --------------------------------------------------------------
-file_path = r'D:\Aa中工互联\工作安排\英格索兰\data\特征工程\滞后特征DQ200.xlsx'
+file_path = r'D:\Aa中工互联\工作安排\英格索兰\data\特征工程\分钟数据-清洗-时间.xlsx'
 df = pd.read_excel(file_path)
 
 # 移除非特征列
