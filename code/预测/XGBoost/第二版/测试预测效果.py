@@ -23,9 +23,9 @@ def predict_values(excel_path, model_path, num_samples):
         print(f"真实值: {true}, 预测值: {pred}")
 
 # 使用示例
-target = 'AVS总流量'
-excel_file_path = r'D:\Aa中工互联\工作安排\英格索兰\data\特征工程\分钟数据-清洗-时间.xlsx'  # 替换为你的Excel文件路径
-model_file_path = r'D:\Aa中工互联\工作安排\英格索兰\xgb_avs_time.pkl'  # 模型文件路径
+target = 'DQ200总流量'
+excel_file_path = r'D:\Aa中工互联\工作安排\英格索兰\data\预测\分钟数据-清洗-时间(节选).xlsx'  # 替换为你的Excel文件路径
+model_file_path = r'D:\Aa中工互联\工作安排\英格索兰\Fastapi\xgb_dq200_part.pkl'  # 模型文件路径
 number_of_samples = 10  # 指定要使用的数据条数
 
 predict_values(excel_file_path, model_file_path, number_of_samples)
