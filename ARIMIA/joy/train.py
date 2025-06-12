@@ -20,13 +20,13 @@ import time
 DATA_FILE_PATH = r'D:\Aa中工互联\工作安排\英格索兰\code\预测\lstm\data\new_history_data_0606.xlsx'
 DATE_COLUMN = 'timestamp'
 TARGET_COLUMN = '瞬时流量'
-SAMPLING_INTERVAL = 10  # 重采样间隔（分钟）
+SAMPLING_INTERVAL = 30  # 重采样间隔
 OUTPUT_DIR = 'sarima_results'
-MODEL_FILE = 'sarima_model_mse_10min.pkl'
+MODEL_FILE = 'sarima_model_30.pkl'
 
 # SARIMA参数 (p,d,q)(P,D,Q,s)
 SARIMA_ORDER = (0, 2, 1)
-SEASONAL_ORDER = (1, 1, 0, 144)  # 季节性周期为一天(144个10分钟)
+SEASONAL_ORDER = (1, 1, 0, 48)  # 季节性周期为一天(144个10分钟)
 
 
 def setup_output_directory(output_dir):
