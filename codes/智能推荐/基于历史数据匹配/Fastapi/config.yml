@@ -1,0 +1,33 @@
+# config.yml
+api_config:
+  url: ""
+  params:
+    interval: 60000      
+    valueonly: 0
+    decimal: 2
+    names: 
+      - "DLDZ_DQ200_SYSTEM_PI05.PV"
+      - "DLDZ_AVS_SYSTEM_PI05.PV"
+      - "DLDZ_DQ200_LLJ01_FQ01.PV"
+      - "DLDZ_AVS_LLJ01_FQ01.PV"
+
+variable_mapping:
+  "DLDZ_DQ200_SYSTEM_PI05.PV": "DQ200系统压力"
+  "DLDZ_AVS_SYSTEM_PI05.PV": "AVS系统压力"
+  "DLDZ_DQ200_LLJ01_FQ01.PV": "DQ200累积流量"
+  "DLDZ_AVS_LLJ01_FQ01.PV": "AVS累积流量"
+
+model_config:
+  model_path: "xgb_reg_model.pkl"
+
+time_features:
+  enabled: true
+  include_weekday: true
+  include_quarter: true
+  include_is_weekend: true
+
+app_info:
+  name: "英格索兰项目"
+  version: "1.0.0"
+  author: "赵泽宸"
+  description: "基于XGBoost的瞬时用气量预测模型"
