@@ -1,5 +1,0 @@
-strategy_add_feature 模型评估指标:
-MSE: 21.1604
-RMSE: 4.6000
-MAE: 2.6245
-R2: 0.9939

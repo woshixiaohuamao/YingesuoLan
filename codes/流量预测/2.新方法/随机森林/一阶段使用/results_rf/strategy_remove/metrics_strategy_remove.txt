@@ -1,5 +1,0 @@
-strategy_remove 模型评估指标:
-MSE: 131.1300
-RMSE: 11.4512
-MAE: 4.1834
-R2: 0.9621
