@@ -1,0 +1,12 @@
+Best parameters found:
+OrderedDict({
+    'reg__colsample_bytree': 0.900635462955971, 
+    'reg__learning_rate': 0.29999999999999993, 
+    'reg__max_depth': 4, 
+    'reg__n_estimators': 139, 
+    'reg__subsample': 0.9089509263201534})
+MSE: 0.0004
+RMSE: 0.0195
+MAE: 0.0108
+R²: 1.0000   过拟合
+MAPE: 11674352713882.4824
